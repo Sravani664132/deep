@@ -26,11 +26,26 @@ class emp2 implements employee{
 		
 	}
 }
+class emp3 implements employee{
+	float sal;
+	String name;
+	emp3(String name, float sal){
+		this.name=name;
+		this.sal=sal;
+	}
+	public void salary() {
+		System.out.println("The salary of "+name+" is "+sal);
+		
+	}
+}
 public class srav4{
 	public static void main(String[] args) {
 		employee e=new emp1("Jaya",9000);
 		e.salary();
 		e=new emp2("kil",8000);
 		e.salary();
+		e=new emp3("kull",7000);
+		e.salary();
+		
 	}
 }
